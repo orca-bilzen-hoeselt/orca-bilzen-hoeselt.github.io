@@ -1,0 +1,75 @@
+/* Set the background color to #00a5ff */
+body {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    background-color: #00a5ff;
+    /* Bright cyan-blue background */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Rectangle styling */
+/* screen size 624 x 416 */
+.rectangle {
+    width: 628px;
+    /* Rectangle width */
+    height: 420px;
+    /* Rectangle height */
+    /* toggle border for development*/
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    /* Optional black border for visibility */
+    display: flex;
+    flex-direction: column;
+    /* Arrange children vertically */
+    justify-content: flex-start;
+    /* Align children to the top */
+    align-items: center;
+    /* Center children horizontally */
+    position: absolute;
+    /* Position it absolutely within the body */
+    left: 0px;
+    /* Align to the left of the screen */
+    top: 0px;
+    /* Vertically center in the viewport */
+}
+
+/* Logo styling */
+.logo {
+    width: 250px;
+    /* Reduce logo width */
+    height: auto;
+    /* Maintain aspect ratio */
+    padding-top: 40px;
+}
+
+/* Style the clock */
+h1 {
+    font-size: 60px;
+    /* Clock font size */
+    color: #ffff;
+    /* White text for contrast */
+    margin: 10px 0 0 0;
+    /* Add margin to the top */
+    font-weight: 600;
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
