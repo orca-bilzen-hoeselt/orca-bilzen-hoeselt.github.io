@@ -76,7 +76,7 @@ p {
 
 /* Style for the smaller text (the) */
 .small {
-    font-size: 18px; /* Smaller font size */
+    font-size: 26px; /* Smaller font size */
     color: white; /* White color */
     font-weight: normal; /* Optional: normal weight */
 }
@@ -131,7 +131,7 @@ h1 {
     color: white;
     /* White text for contrast */
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     /* Add margin to the top */
     font-weight: 600;
 }
