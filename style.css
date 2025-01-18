@@ -37,13 +37,66 @@ body {
     /* Vertically center in the viewport */
 }
 
+p {
+    color: white;
+}
+
 /* Logo styling */
 .logo {
-    width: 300px;
+    width: 230px;
     /* Reduce logo width */
     height: auto;
     /* Maintain aspect ratio */
-    padding-top: 40px;
+    padding-top: 0px;
+}
+
+/* Reset margin and padding for the <p> tags inside the .rectangle */
+.rectangle p {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Keep content centered */
+}
+
+/* Styling the container for alignment */
+.save-the-date {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center align the text */
+    align-items: center; /* Vertically align items */
+    gap: 8px; /* Add spacing between words */
+    justify-content: center; /* Center the whole text block if needed */
+    margin-top: 20px; /*Reset margin for the paragraph */
+}
+
+/* Style for the larger text (Save and date) */
+.large {
+    font-size: 35px; /* Larger font size */
+    color: white; /* White color */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+/* Style for the smaller text (the) */
+.small {
+    font-size: 18px; /* Smaller font size */
+    color: white; /* White color */
+    font-weight: normal; /* Optional: normal weight */
+}
+
+/* Style for the bold, white date */
+.bold-date {
+    font-size: 32px; /* Adjust size as needed */
+    color: white; /* White text */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center align if necessary */
+    margin: 10px 0 5px 0; /* Adjust margin to reduce spacing */
+}
+
+/* Style for the time to save in the calander text */
+.time {
+    font-size: 20px; /* Slightly bigger font */
+    color: white; /* White text */
+    font-weight: normal; /* Optional: Keep normal weight */
+    text-align: center; /* Center align if needed */
+    margin: 0; /* Remove additional space */
 }
 
 nav {
@@ -75,9 +128,10 @@ nav a:active {
 h1 {
     font-size: 60px;
     /* Clock font size */
-    color: #ffff;
+    color: white;
     /* White text for contrast */
-    margin: 10px 0 0 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
     /* Add margin to the top */
     font-weight: 600;
 }
@@ -98,3 +152,35 @@ svg {
     overflow: hidden;
 }
 
+/* Container for Meer info */
+.meer-info {
+    position: absolute; /* Position it at the bottom-right */
+    bottom: 20px; /* Space from the bottom */
+    right: 20px; /* Space from the right */
+    text-align: center; /* Center align the text and icons */
+    color: white; /* White text */
+}
+
+.meer-info p {
+    font-size: 18px; /* Font size for "Meer info" */
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex; /* Use flexbox to align icons horizontally */
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+    margin-top: 10px; /* Add space above icons */
+}
+
+.icon {
+    width: 30px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
