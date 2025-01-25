@@ -1,5 +1,5 @@
 function updateClock() {
-    const clockElement = document.getElementById('clock');
+    const clockElement = document.querySelector('.clock');
 
     // Create a new Date object and adjust for Belgium timezone (UTC +2 in daylight saving, +1 otherwise)
     const date = new Date();
@@ -10,7 +10,7 @@ function updateClock() {
 }
 
 // Update the clock every second
-setInterval(updateClock, 100);
+setInterval(updateClock, 1000);
 
 // Initial call to set the time immediately
 updateClock();

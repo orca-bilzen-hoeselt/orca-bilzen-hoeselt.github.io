@@ -43,11 +43,11 @@ p {
 
 /* Logo styling */
 .logo {
-    width: 230px;
+    width: 220px;
     /* Reduce logo width */
     height: auto;
     /* Maintain aspect ratio */
-    padding-top: 0px;
+    padding-top: 15px;
 }
 
 /* Reset margin and padding for the <p> tags inside the .rectangle */
@@ -69,21 +69,21 @@ p {
 
 /* Style for the larger text (Save and date) */
 .large {
-    font-size: 35px; /* Larger font size */
+    font-size: 33px; /* Larger font size */
     color: white; /* White color */
     font-weight: bold; /* Optional: make it bold */
 }
 
 /* Style for the smaller text (the) */
 .small {
-    font-size: 26px; /* Smaller font size */
+    font-size: 24px; /* Smaller font size */
     color: white; /* White color */
     font-weight: normal; /* Optional: normal weight */
 }
 
 /* Style for the bold, white date */
 .bold-date {
-    font-size: 32px; /* Adjust size as needed */
+    font-size: 28px; /* Adjust size as needed */
     color: white; /* White text */
     font-weight: bold; /* Make the text bold */
     text-align: center; /* Center align if necessary */
@@ -123,6 +123,24 @@ nav a:active {
     color: #ff6600; /* Active state color */
 }
 
+.club-name{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the clock */
+.clock {
+    font-size: 55px;
+    /* Clock font size */
+    color: white;
+    /* White text for contrast */
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /* Add margin to the top */
+    font-weight: 600;
+}
 
 /* Style the clock */
 h1 {
