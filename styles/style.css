@@ -99,30 +99,6 @@ p {
     margin: 0; /* Remove additional space */
 }
 
-nav {
-    padding: 20px; /* Add padding for spacing */
-    text-align: left; /* Align links to the left */
-    width: 200px; /* Optional: Set a fixed width for the nav */
-}
-
-nav a {
-    display: block; /* Make each link a block element */
-    color: white; /* White text for contrast */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 0; /* Add spacing between links */
-    font-size: 18px; /* Adjust font size */
-    font-family: Arial, sans-serif; /* Set font family */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-}
-
-nav a:hover {
-    color: #ff9900; /* Change text color on hover */
-}
-
-nav a:active {
-    color: #ff6600; /* Active state color */
-}
-
 .club-name{
     color: white;
     font-size: 20px;
@@ -138,18 +114,6 @@ nav a:active {
     /* White text for contrast */
     margin-top: 0px;
     margin-bottom: 5px;
-    /* Add margin to the top */
-    font-weight: 600;
-}
-
-/* Style the clock */
-h1 {
-    font-size: 60px;
-    /* Clock font size */
-    color: white;
-    /* White text for contrast */
-    margin-top: 0px;
-    margin-bottom: 20px;
     /* Add margin to the top */
     font-weight: 600;
 }

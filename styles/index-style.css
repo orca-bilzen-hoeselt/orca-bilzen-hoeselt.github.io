@@ -1,0 +1,78 @@
+/* Set the background color to #00a5ff */
+body {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    background-color: #00a5ff;
+    /* Bright cyan-blue background */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Style the h1 */
+h1 {
+    font-size: 60px;
+    /* Clock font size */
+    color: white;
+    /* White text for contrast */
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /* Add margin to the top */
+    font-weight: 600;
+}
+
+/* Rectangle styling */
+/* screen size 624 x 416 */
+.rectangle {
+    width: 628px;
+    /* Rectangle width */
+    height: 420px;
+    /* Rectangle height */
+    /* toggle border for development*/
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    /* Optional black border for visibility */
+    display: flex;
+    flex-direction: column;
+    /* Arrange children vertically */
+    justify-content: flex-start;
+    /* Align children to the top */
+    align-items: center;
+    /* Center children horizontally */
+    position: absolute;
+    /* Position it absolutely within the body */
+    left: 0px;
+    /* Align to the left of the screen */
+    top: 0px;
+    /* Vertically center in the viewport */
+}
+
+p {
+    color: white;
+}
+
+nav {
+    padding: 20px; /* Add padding for spacing */
+    text-align: left; /* Align links to the left */
+    width: 200px; /* Optional: Set a fixed width for the nav */
+}
+
+nav a {
+    display: block; /* Make each link a block element */
+    color: white; /* White text for contrast */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 0; /* Add spacing between links */
+    font-size: 18px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Set font family */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    color: #ff9900; /* Change text color on hover */
+}
+
+nav a:active {
+    color: #ff6600; /* Active state color */
+}
