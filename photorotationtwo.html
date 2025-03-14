@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>photo rotation</title>
+    <style>
+        /* Voeg hier de CSS toe zoals hierboven beschreven */
+    </style>
+</head>
+
+<body>
+    <!-- Omhulsels voor de nieuwe pagina om conflicten met bovenliggende stijlen te voorkomen -->
+    <div class="new-page-wrapper">
+        <!-- Header met logo en clubnaam onder het logo -->
+        <div class="header">
+            <img src="assets/logo25.png" alt="Logo" class="logo">
+            <div class="club-name">Watersportclub Orca Bilzen</div>
+        </div>
+
+        <!-- Afbeeldingen naast de header in een container -->
+        <div class="content">
+            <div class="image-container">
+                <img src="assets/glijbaan.jpeg" alt="Image 1" class="slideshow-image">
+                <img src="assets/botsauto.jpeg" alt="Image 2" class="slideshow-image">
+                <img src="assets/klimspeeltuin.jpeg" alt="Image 3" class="slideshow-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.slideshow-image');
+
+        function showNextImage() {
+            images.forEach((image) => {
+                image.style.display = 'none';
+            });
+
+            currentImageIndex++;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+
+            images[currentImageIndex].style.display = 'block';
+        }
+
+        setInterval(showNextImage, 5000);
+        showNextImage();
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #00a5ff;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+        }
+
+        .new-page-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .header {
+            display: block;
+            align-items: center;
+            text-align: left;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-left: 45px;
+        }
+
+        .club-name {
+            color: white;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 18px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+
+        .slideshow-image {
+            display: none;
+            width: auto;
+            height: 300px;
+            margin-top: 30px;
+            margin-right: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</body>
+
+</html>

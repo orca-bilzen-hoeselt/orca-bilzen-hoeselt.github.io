@@ -16,7 +16,7 @@ body {
 .rectangle {
     width: 628px;
     /* Rectangle width */
-    height: 420px;
+    height: 422px;
     /* Rectangle height */
     /* toggle border for development*/
     border-right: 2px solid #000;
@@ -35,75 +35,16 @@ body {
     /* Align to the left of the screen */
     top: 0px;
     /* Vertically center in the viewport */
-}
 
-p {
-    color: white;
-}
-
-/* Logo styling */
-.logo {
-    width: 220px;
-    /* Reduce logo width */
-    height: auto;
-    /* Maintain aspect ratio */
-    padding-top: 15px;
+    max-height: 422px;
+    overflow: hidden;
 }
 
 /* Reset margin and padding for the <p> tags inside the .rectangle */
 .rectangle p {
+    color: white;
     margin: 0;
     padding: 0;
-    text-align: center; /* Keep content centered */
-}
-
-/* Styling the container for alignment */
-.save-the-date {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center align the text */
-    align-items: center; /* Vertically align items */
-    gap: 8px; /* Add spacing between words */
-    justify-content: center; /* Center the whole text block if needed */
-    margin-top: 20px; /*Reset margin for the paragraph */
-}
-
-/* Style for the larger text (Save and date) */
-.large {
-    font-size: 33px; /* Larger font size */
-    color: white; /* White color */
-    font-weight: bold; /* Optional: make it bold */
-}
-
-/* Style for the smaller text (the) */
-.small {
-    font-size: 24px; /* Smaller font size */
-    color: white; /* White color */
-    font-weight: normal; /* Optional: normal weight */
-}
-
-/* Style for the bold, white date */
-.bold-date {
-    font-size: 28px; /* Adjust size as needed */
-    color: white; /* White text */
-    font-weight: bold; /* Make the text bold */
-    text-align: center; /* Center align if necessary */
-    margin: 10px 0 5px 0; /* Adjust margin to reduce spacing */
-}
-
-/* Style for the time to save in the calander text */
-.time {
-    font-size: 20px; /* Slightly bigger font */
-    color: white; /* White text */
-    font-weight: normal; /* Optional: Keep normal weight */
-    text-align: center; /* Center align if needed */
-    margin: 0; /* Remove additional space */
-}
-
-.club-name{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style the clock */
@@ -118,13 +59,6 @@ p {
     font-weight: 600;
 }
 
-svg {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .container {
     display: inline-block;
     position: relative;
@@ -136,33 +70,55 @@ svg {
 
 /* Container for Meer info */
 .meer-info {
-    position: absolute; /* Position it at the bottom-right */
-    bottom: 20px; /* Space from the bottom */
-    right: 20px; /* Space from the right */
-    text-align: center; /* Center align the text and icons */
-    color: white; /* White text */
+    position: absolute;
+    /* Position it at the bottom-right */
+    bottom: 20px;
+    /* Space from the bottom */
+    right: 20px;
+    /* Space from the right */
+    text-align: center;
+    /* Center align the text and icons */
+    color: white;
+    /* White text */
 }
 
 .meer-info p {
-    font-size: 18px; /* Font size for "Meer info" */
+    font-size: 18px;
+    /* Font size for "Meer info" */
     margin: 0;
     font-weight: bold;
 }
 
 .social-icons {
-    display: flex; /* Use flexbox to align icons horizontally */
+    display: flex;
+    /* Use flexbox to align icons horizontally */
     justify-content: center;
-    gap: 10px; /* Space between icons */
-    margin-top: 10px; /* Add space above icons */
+    gap: 10px;
+    /* Space between icons */
+    margin-top: 10px;
+    /* Add space above icons */
 }
 
 .icon {
-    width: 30px; /* Icon size */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Add pointer cursor for interactivity */
-    transition: transform 0.3s ease; /* Add transition for hover effect */
+    width: 30px;
+    /* Icon size */
+    height: auto;
+    /* Maintain aspect ratio */
+    cursor: pointer;
+    /* Add pointer cursor for interactivity */
+    transition: transform 0.3s ease;
+    /* Add transition for hover effect */
 }
 
-.icon:hover {
-    transform: scale(1.1); /* Slightly enlarge icons on hover */
+#rotatingFrame {
+    width: 100%;
+    flex-grow: 1;
+    /* Zorgt ervoor dat de iframe alle beschikbare ruimte gebruikt */
+    min-height: 150px;
+    /* Min. hoogte instellen */
+    max-height: 100%;
+    /* Niet geforceerd beperken */
+    border: none;
+    display: block;
+    overflow: hidden;
 }

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeugd</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <!-- Rectangle Container with Logo, Wave, and Clock -->
-    <div class="rectangle">
-        <img src="assets/logo25.png" alt="Logo" class="logo"> <!-- Logo in the center -->
-        <div class="club-name">Watersportclub Orca Bilzen</div>
-        <div class="clock"></div> <!-- Clock under the logo -->
-        <p class="save-the-date">
-            <span class="large">SAVE</span>
-            <span class="small">THE</span>
-            <span class="large">DATE</span>
-        </p>
-        <p><span class="bold-date">12/04/2025</span></p>
-        <p><span class="time">Vanaf 14u00</span></p>
 
-         <!-- "Meer info" section -->
-        <div class="meer-info">
-            <p>Meer info</p>
-            <div class="social-icons">
-                <img src="assets/mail-icon.png" alt="Mail" class="icon">
-                <img src="assets/facebook-icon.png" alt="Facebook" class="icon">
-                <img src="assets/instagram-icon.png" alt="Instagram" class="icon">
-            </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeugd</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <div class="rectangle">
+    <!-- Rotating content is loaded into this iframe -->
+    <iframe id="rotatingFrame" src="savethedate.html" name="Home" scrolling="no"></iframe>
+
+    <!-- Footer with Clock -->
+    <div class="footer">
+      <div id="footerClock" class="clock"></div>
     </div>
-    <script src="scripts/script.js"></script>
+
+    <!-- "Meer info" always visible -->
+    <div class="meer-info">
+      <p>Meer info</p>
+      <div class="social-icons">
+        <img src="assets/mail-icon.png" alt="Mail" class="icon">
+        <img src="assets/facebook-icon.png" alt="Facebook" class="icon">
+        <img src="assets/instagram-icon.png" alt="Instagram" class="icon">
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>

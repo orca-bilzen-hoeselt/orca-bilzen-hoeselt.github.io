@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Winner content</title>
+</head>
+
+<body>
+  <img src="assets/discoball.png" alt="discoball" class="discoball">
+  <div class="header">
+    <img src="assets/logo25.png" alt="Logo" class="logo">
+    <div class="club-name">Watersportclub Orca Bilzen</div>
+  </div>
+
+  <div class="proficiat-page">
+    <h1>PROFICIAT</h1>
+    <div class="text-with-images">
+      <img src="assets/ballonen.png" alt="ballonen" class="ballonen left">
+      <p>De 10 winnaars ontvangen een privé berichtje en kunnen op 12 april hun prijs komen afhalen op het evenement !
+      </p>
+      <img src="assets/ballonen.png" alt="ballonen" class="ballonen right">
+    </div>
+  </div>
+
+  <style>
+    body {
+      color: white;
+    }
+
+    .header {
+      display: block;
+      align-items: center;
+      text-align: left;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-left: 45px;
+    }
+
+    .club-name {
+      color: white;
+      font-size: 15px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 18px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 10px;
+      font-family: georgia;
+    }
+
+    .text-with-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.2;
+      max-width: 300px;
+      word-wrap: break-word;
+      font-family: georgia;
+    }
+
+    .discoball {
+      width: 120px;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .ballonen {
+      width: 80px;
+      height: auto;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    .left {
+      order: -1;
+      position: relative;
+      top: -10px;
+    }
+
+    .right {
+      order: 1;
+      position: relative;
+      top: -10px;
+    }
+  </style>
+
+</body>
+
+</html>

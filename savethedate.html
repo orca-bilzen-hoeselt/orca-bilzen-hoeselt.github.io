@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Default Content</title>
+</head>
+
+<body>
+  <div class="content">
+    <!-- Header: Logo and Club Name -->
+    <div class="header">
+      <img src="assets/logo25.png" alt="Logo" class="logo">
+      <div class="club-name">Watersportclub Orca Bilzen</div>
+    </div>
+
+    <p class="save-the-date">
+      <span class="large">SAVE</span>
+      <span class="small">THE</span>
+      <span class="large">DATE</span>
+    </p>
+    <p><span class="bold-date">12/04/2025</span></p>
+    <p><span class="time">Vanaf 14u00</span></p>
+
+  </div>
+  <style>
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 220px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .club-name {
+      color: white;
+      font-size: 20px;
+      margin-top: 5px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* Rotating Content area */
+    #rotatingContent {
+      text-align: center;
+    }
+
+    /* Clock placed in the footer area */
+    .clock {
+      font-size: 55px;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* When an image is showing, position header in top-left, but center its content */
+    .rectangle.image-showing .header {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers the logo and text horizontally */
+    }
+
+    /* Smaller logo for image mode */
+    .rectangle.image-showing .logo {
+      width: 100px;
+      margin: 0; /* Remove any default margins */
+    }
+
+    /* Adjust club name styling */
+    .rectangle.image-showing .club-name {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    /* Rotating image styling */
+    #rotatingContent img.rotating-image {
+      display: block;
+      margin: 50px auto 10% auto;
+      max-width: 90%; /* Use up to 90% of the available width */
+      max-height: 300px; /* Adjust this value as needed so the image fits within the rectangle */
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+
+    p {
+      margin: 0 0 0 0;
+    }
+
+    /* Styling the container for alignment */
+    .save-the-date {
+      display: flex;
+      /* Use flexbox for alignment */
+      justify-content: center;
+      /* Center align the text */
+      align-items: center;
+      /* Vertically align items */
+      gap: 8px;
+      /* Add spacing between words */
+      justify-content: center;
+      /* Center the whole text block if needed */
+      margin-top: 0px;
+      /*Reset margin for the paragraph */
+    }
+
+    /* Style for the larger text (Save and date) */
+    .large {
+      font-size: 33px;
+      /* Larger font size */
+      color: white;
+      /* White color */
+      font-weight: bold;
+      /* Optional: make it bold */
+    }
+
+    /* Style for the smaller text (the) */
+    .small {
+      font-size: 24px;
+      /* Smaller font size */
+      color: white;
+      /* White color */
+      font-weight: normal;
+      /* Optional: normal weight */
+    }
+
+    /* Style for the bold, white date */
+    .bold-date {
+      display: flex;
+      /* Use flexbox for alignment */
+      justify-content: center;
+      /* Center align the text */
+      font-size: 28px;
+      /* Adjust size as needed */
+      color: white;
+      /* White text */
+      font-weight: bold;
+      /* Make the text bold */
+      text-align: center;
+      /* Center align if necessary */
+    }
+
+    /* Style for the time to save in the calander text */
+    .time {
+      display: flex;
+      /* Use flexbox for alignment */
+      justify-content: center;
+      /* Center align the text */
+      font-size: 20px;
+      /* Slightly bigger font */
+      color: white;
+      /* White text */
+      font-weight: normal;
+      /* Optional: Keep normal weight */
+      text-align: center;
+      /* Center align if needed */
+      margin: 0 0 0 auto;
+      /* Remove additional space */
+    }
+  </style>
+</body>
+
+</html>
