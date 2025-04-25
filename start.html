@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Default Content</title>
+</head>
+
+<body>
+  <div class="content">
+    <!-- Header: Logo and Club Name -->
+    <div class="header">
+      <img src="assets/logo25.png" alt="Logo" class="logo">
+      <div class="club-name">Watersportclub Orca Bilzen</div>
+    </div>
+  </div>
+  <style>
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 220px;
+      height: auto;
+      display: block;
+      margin: 50px auto auto auto;
+    }
+
+    .club-name {
+      color: white;
+      font-size: 20px;
+      margin-top: 5px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* Rotating Content area */
+    #rotatingContent {
+      text-align: center;
+    }
+
+    /* Clock placed in the footer area */
+    .clock {
+      font-size: 55px;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* When an image is showing, position header in top-left, but center its content */
+    .rectangle.image-showing .header {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers the logo and text horizontally */
+    }
+
+    /* Smaller logo for image mode */
+    .rectangle.image-showing .logo {
+      width: 100px;
+      margin: 0; /* Remove any default margins */
+    }
+
+    /* Adjust club name styling */
+    .rectangle.image-showing .club-name {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    /* Rotating image styling */
+    #rotatingContent img.rotating-image {
+      display: block;
+      margin: 50px auto 10% auto;
+      max-width: 90%; /* Use up to 90% of the available width */
+      max-height: 300px; /* Adjust this value as needed so the image fits within the rectangle */
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  </style>
+</body>
+
+</html>

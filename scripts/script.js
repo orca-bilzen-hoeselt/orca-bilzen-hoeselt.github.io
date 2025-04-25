@@ -22,13 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // List of pages for rotation
   const pages = [
-    "savethedate.html",
-    "photorotation.html",
-    "winner.html",
-    "photorotationtwo.html",
-    "nieuwebadkleding.html",
-    "photorotationthree.html",
-    "explorijck.html"
+    "start.html",
+    "nieuwebadkleding.html"
   ];
 
   let currentPage = 0;
