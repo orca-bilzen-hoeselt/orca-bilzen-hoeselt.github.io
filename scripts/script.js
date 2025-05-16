@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // List of pages for rotation
   const pages = [
     "start.html",
-    "nieuwebadkleding.html"
   ];
 
   let currentPage = 0;
@@ -62,9 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Zorg ervoor dat de hoogte correct wordt aangepast na het laden
-  document.getElementById("rotatingFrame").onload = function () {
-    setTimeout(adjustIframeHeight, 100); // Vertraging om inhoud te laden
-  };
+  // document.getElementById("rotatingFrame").onload = function () {
+  //   setTimeout(adjustIframeHeight, 100); // Vertraging om inhoud te laden
+  // };
 
   // Rotate pages every 30 seconds
   setInterval(rotatePage, 30000);
