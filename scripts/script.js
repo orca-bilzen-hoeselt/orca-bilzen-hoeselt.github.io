@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const pages = [
     "start.html",
     "welcomeback.html",
-    "lesgevergezocht.html"
   ];
 
   let currentPage = 0;
