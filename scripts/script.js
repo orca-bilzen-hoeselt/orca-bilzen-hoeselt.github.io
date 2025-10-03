@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // List of pages for rotation
   const pages = [
-    "start.html",
-    "welcomeback.html",
+    "start.html"
   ];
 
   let currentPage = 0;
@@ -67,5 +66,5 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Rotate pages every 30 seconds
-  setInterval(rotatePage, 30000);
+  setInterval(rotatePage, 30000000);
 });
