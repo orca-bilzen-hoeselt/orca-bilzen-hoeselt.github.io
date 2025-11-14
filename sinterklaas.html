@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Sinterklaas</title>
+</head>
+<body>
+  <img src="assets/flags-sinterklaas.png" alt="celebration flags" class="celebrationFlags">
+  <div class="header">
+    <div class="club-name"> .</div>
+  </div>
+  
+  <div class="content">
+      <img src="assets/sinterklaas.png" alt="Sinterklaas" class="sinterklaas">
+          <div class="text-block">
+              <p class="text">Sint en Piet komen naar het zwembad!</p>
+              <div class="info-block">
+                  <img src="assets/what-time.png" alt="Tijd" class="info-icon">
+                  <p class="text">29 november</p>
+              </div>
+          </div>
+  </div>
+
+
+  <style>
+     body {
+      color: white;
+    }
+
+    .header {
+      display: block;
+      align-items: center;
+      text-align: left;
+    }
+
+    .club-name {
+      color: white;
+      font-size: 0px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 18px;
+    }
+
+    .title p {
+      margin-top: 10px; /* Reduce space above p */
+    }
+
+    .title {
+      width: 350px;
+      position: absolute;
+      left: 60%;
+      transform: translateX(-40%);
+    }
+    
+    p {
+      margin: 0px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+    .celebrationFlags {
+      width: 500px;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 15px;
+    }
+
+    .content {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; /* space between text and image */
+    }
+
+    .text {
+      font-size: 30px;
+    }
+
+    .text-block {
+      text-align: center;
+    }
+
+    .info-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .info-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sinterklaas {
+      width: 170px;
+      height: auto;
+      margin-left: 10px;
+    }
+
+  </style>
+
+</body>
+</html>
