@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // List of pages for rotation
   const pages = [
     "start.html",
-    "dickensdagen.html"
+    "happynewyear.html"
   ];
 
   let currentPage = 0;
