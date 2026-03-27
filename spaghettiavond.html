@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Spaghettiavond</title>
+</head>
+<body>
+    <img src="assets/spaghetti-vork.png" alt="spaghetti-vork" class="spaghetti-vork">
+
+    <div class="title">
+      <h1>Spaghettiavond</h1>
+    </div>
+
+    <div class="header">
+      <img src="assets/logo_orca_removed_bg.png" alt="Logo" class="logo">
+    </div>
+
+  <div class="content">
+    <img src="assets/spaghettibord.png" alt="spaghettibord" class="spaghettibord">
+
+    <br><br>
+    <p>Spaghetti bolognaise & vegetarisch</p>
+    <p class="small-text">Groot € 14</p>
+    <p class="small-text">Klein € 9</p>
+    <br>
+    <br>
+
+    <div class="info-block">
+      <img src="assets/what-time.png" class="info-icon">
+      <p>09/05/2026</p>
+    </div>
+
+    <div class="info-block">
+      <img src="assets/clock.png" class="info-icon">
+      <p>17:00 - 21:00</p>
+    </div>
+
+    <div class="info-block">
+      <img src="assets/location-icon.png" class="info-icon">
+      <p>Zaal Ter Willer, Waltwilder</p>
+    </div>
+  </div>
+
+
+  <style>
+    body {
+      color: white;
+    }
+
+    .header {
+      display: block;
+      align-items: center;
+      text-align: left;
+    }
+
+    .logo {
+        width: 130px;
+        height: auto;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .club-name {
+      color: white;
+      font-size: 15px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 18px;
+    }
+
+    .spaghetti-vork {
+      width: 130px;
+      height: auto;
+      position: absolute ;
+      left: 90%;
+      transform: translateX(-50%);
+      margin-top: 10px;
+    }
+
+    .title p {
+      margin-top: 10px; /* Reduce space above p */
+    }
+
+    .title {
+      width: 350px;
+      position: absolute;
+      left: 55%;
+      transform: translateX(-40%);
+      margin-top: 12px;
+    }
+
+    .subtitle {
+      margin: 10px 50px 20px 100px;
+    }
+      
+    p {
+      margin: 0px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+    .small-text {
+      font-size: 16px;
+    }
+
+    .info-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative; /* IMPORTANT */
+    }
+
+    .info-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .location-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .spaghettibord {
+      width: 150px;
+      position: absolute;
+      left: 40px;
+      bottom: -20px;
+    }
+
+  </style>
+
+</body>
+</html>
