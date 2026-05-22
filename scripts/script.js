@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // List of pages for rotation
   const pages = [
     "start.html",
-    "spaghettiavond.html"
   ];
 
   let currentPage = 0;
@@ -68,5 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Rotate pages every 30 seconds
   // When only showing start page and not rotating set interval very high to prevent flickering
-  setInterval(rotatePage, 30000);
+  setInterval(rotatePage, 30000000);
 });
